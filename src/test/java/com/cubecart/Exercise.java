@@ -10,20 +10,20 @@ import java.util.List;
 public class Exercise {
 
 
-    @Test(enabled = false)
-    public void permissionTest() {
-        String token = getTokenForUserWithoutPermissions(user1);
-        PseudoCode pseudoCode = new PseudoCode(token);
-        try {
-            pseudoCode.createTheThing();
-        } catch (SdkResponseException e) {
-            Assert.assertTrue(e.getStatusCode() == 404);
-        }
-
-        String token2 = getTokenForUserWithPermissions(user2);
-        PseudoCode pseudoCode2 = new PseudoCode(token2);
-        pseudoCode.createTheThing();
-    }
+//    @Test(enabled = false)
+//    public void permissionTest() {
+//        String token = getTokenForUserWithoutPermissions(user1);
+//        PseudoCode pseudoCode = new PseudoCode(token);
+//        try {
+//            pseudoCode.createTheThing();
+//        } catch (SdkResponseException e) {
+//            Assert.assertTrue(e.getStatusCode() == 404);
+//        }
+//
+//        String token2 = getTokenForUserWithPermissions(user2);
+//        PseudoCode pseudoCode2 = new PseudoCode(token2);
+//        pseudoCode.createTheThing();
+//    }
 
 
 
